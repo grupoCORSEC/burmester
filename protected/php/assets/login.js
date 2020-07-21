@@ -8,12 +8,12 @@ Vue.component('login', {
           <div class="card-body p-0">
             <!-- Nested Row within Card Body -->
             <div class="row">
-              <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+              <div class="col-lg-6 d-none d-lg-block bg-login-image bg-login-text"></div>
               <div class="col-lg-6">
                 <div class="p-5">
                   <div class="text-center">
                     <img
-                      src="img/bg_logo.svg"
+                      src="img/logo.svg"
                       alt="logo_movil"
                       class="d-md d-lg-none"
                       style="width: 150px; height: 150px;"

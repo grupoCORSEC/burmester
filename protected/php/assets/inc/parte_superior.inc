@@ -5,9 +5,9 @@
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
       <div class="sidebar-brand-icon">
-        <img src="../../../img/logo_blanco.svg" class="img-fluid" />
+        <img src="../../../img/logo_blanco_corsec_horizontal.png" class="img-fluid"/>
       </div>
-      <div class="sidebar-brand-text mx-3"><sup>v1.0</sup></div>
+      <div class="sidebar-brand-text mx-2.5"><sup> v1.0</sup></div>
     </a>
 
     <!-- Divider -->
