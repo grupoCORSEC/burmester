@@ -52,9 +52,10 @@ $ocultarUno = '';
 
 $conCero = new SQLite3("../data/nom035.db") or die("Problemas para conectar!");
 
-$csE = $conCero -> query("SELECT codeMd5_R1a FROM nom035R1a WHERE codeMd5_R1a = '$_GET[correoCrypt_R1a]'");
+$csE = $conCero -> query("SELECT codeMd5d,gpsd FROM dataEmpleadosDos INNER JOIN nom035R1a ON usrNombre_R1a = Nombred WHERE codeMd5d = '$_GET[correoCrypt_R1a]'");
 while ($dato = $csE->fetchArray()) {
-	$correoCrypt = $dato['codeMd5_R1a'];
+	$correoCrypt = $dato['codeMd5d'];
+	$gpsd = $dato['gpsd'];
 }
 
 $conCero -> close();
@@ -499,12 +500,26 @@ $con -> close();
 				<br>
 				<br>
 				<table>
+					<tr>Copia Digital</tr>
 					<tr>
 						<td>
 							<img src="soloqr.php?txtQr=http://corsec.com.mx/<?php echo $empresa_R1a; ?>/impreR01/enviarResultados.aspx?correoCrypt_R1a=<?php echo $idUsr;?>" style="width: 125px;" />
 						</td>
 						<td style="width: 300px;">
 							<p>http://corsec.com.mx/<?php echo $empresa_R1a; ?>/impreR01/enviarResultados.aspx?correoCrypt_R1a=<?php echo $idUsr;?></p>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<br>
+				<table>
+					<tr>Georreferenciación del levantamiento</tr>
+					<tr>
+						<td>
+							<img src="soloqr.php?txtQr=https://www.google.com.mx/maps/@<?php echo $gpsd; ?>,18z" style="width: 125px;" />
+						</td>
+						<td style="width: 300px;">
+							<p style="font-size: .8em;">https://www.google.com.mx/maps/@<?php echo $gpsd; ?>,18z</p>
 						</td>
 					</tr>
 				</table>

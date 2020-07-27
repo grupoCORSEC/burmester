@@ -120,7 +120,7 @@ session_destroy();
                             <table>
                                 <tr>
                                     <td>
-                                        <img src="img/login.svg" style="margin: 5px 3px 0px 0px; height: 1.5em;">
+                                        <img src="img/login.svg" class="scale-in" style="margin: 5px 3px 0px 0px; height: 1.5em;">
                                     </td>
                                     <td style="width: 350px;">
                                         <input type="text" name="txtUsr" class="inputLogin" placeholder="NOMBRE"  minlength=5 id="autoEmpleado" required style="text-transform: uppercase;"/>

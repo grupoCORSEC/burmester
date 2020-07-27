@@ -8284,8 +8284,8 @@ a:focus {
       height: calc(20rem - 43px) !important; } }
 
 .bg-login-image {
-  /* background: url("../img/logo_animado_100.gif"); */
-  background: url("../img/bg_login.svg");
+  background: url("../img/logo_animado_100.gif");
+  /* background: url("../img/bg_login.svg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80%;
