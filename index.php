@@ -104,7 +104,7 @@ session_destroy();
         <article class="animated fadeIn">
             <form action="validaDos/valida.aspx" method="POST">
             
-                <table style="width: 90%; max-width: 440; margin: 10px;">
+                <table style="width: 90%; max-width: 440px; margin: 10px;">
                     <tr>
                         <td style="text-align: center;">
                             <img src="img/logo.png" alt="LOGO">
